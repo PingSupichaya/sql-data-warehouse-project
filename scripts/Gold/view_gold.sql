@@ -1,3 +1,14 @@
+/*
+===========================================
+DDL Script: Create Gold Views
+===========================================
+Script Purpose:
+	This script creates view for the Gold layer that represents Star schema (Fact & Dimension Table)
+
+Usage:
+	These views can be queried directly for analytics and reporting
+*/
+
 create or alter view gold.dim_customers as
 select
 	row_number() over(order by cst_id) as customer_key,
