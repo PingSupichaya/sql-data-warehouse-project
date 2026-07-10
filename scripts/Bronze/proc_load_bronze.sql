@@ -27,7 +27,7 @@ begin
 		truncate table bronze.crm_cust_info;
 		print '>> Inserting Data Into: bronze.crm_cust_info';
 		bulk insert bronze.crm_cust_info
-		from 'D:\Ping\ISAP_test\datasets\source_crm\cust_info.csv'
+		from 'D:\Ping\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
 		with (
 			firstrow = 2,
 			fieldterminator = ',',
@@ -42,7 +42,7 @@ begin
 		truncate table bronze.crm_prd_info;
 		print '>> Inserting Data Into: bronze.crm_prd_info';
 		bulk insert bronze.crm_prd_info
-		from 'D:\Ping\ISAP_test\datasets\source_crm\prd_info.csv'
+		from 'D:\Ping\sql-data-warehouse-project\datasets\source_crm\prd_info.csv'
 		with (
 			firstrow = 2,
 			fieldterminator = ',',
@@ -57,7 +57,7 @@ begin
 		truncate table bronze.crm_sales_details;
 		print '>> Inserting Data Into: bronze.crm_sales_details';
 		bulk insert bronze.crm_sales_details
-		from 'D:\Ping\ISAP_test\datasets\source_crm\sales_details.csv'
+		from 'D:\Ping\sql-data-warehouse-project\datasets\source_crm\sales_details.csv'
 		with (
 			firstrow = 2,
 			fieldterminator = ',',
@@ -75,7 +75,7 @@ begin
 		truncate table bronze.erp_cust_az12;
 		print '>> Inserting Data Into: bronze.erp_cust_az12';
 		bulk insert bronze.erp_cust_az12
-		from 'D:\Ping\ISAP_test\datasets\source_erp\cust_az12.csv'
+		from 'D:\Ping\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
 		with (
 			firstrow = 2,
 			fieldterminator = ',',
@@ -90,7 +90,7 @@ begin
 		truncate table bronze.erp_loc_a101;
 		print '>> Inserting Data Into: bronze.erp_loc_a101';
 		bulk insert bronze.erp_loc_a101
-		from 'D:\Ping\ISAP_test\datasets\source_erp\loc_a101.csv'
+		from 'D:\Ping\sql-data-warehouse-project\datasets\source_erp\loc_a101.csv'
 		with (
 			firstrow = 2,
 			fieldterminator = ',',
@@ -105,7 +105,7 @@ begin
 		truncate table bronze.erp_px_cat_g1v2;
 		print '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
 		bulk insert bronze.erp_px_cat_g1v2
-		from 'D:\Ping\ISAP_test\datasets\source_erp\px_cat_g1v2.csv'
+		from 'D:\Ping\sql-data-warehouse-project\datasets\source_erp\px_cat_g1v2.csv'
 		with (
 			firstrow = 2,
 			fieldterminator = ',',
